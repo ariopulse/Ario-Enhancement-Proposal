@@ -20,24 +20,24 @@ Name of variables, functions, classes and ... should be meaningful and understan
 Don't be afraid of names length and don't use abbreviations unless necessary.
 
 ```python
-	# Acceptable naming:
-	first_name = 'Cyrus'
-    IP_address = '192.168.1.1'
+# Acceptable naming:
+    first_name = 'Cyrus'
+    new_IP_address = '192.168.1.1'
     average_of_student_scores = 15.53
 	
-	def print_some_text(text):
-		print(text)
+    def print_some_text(text):
+        print(text)
+
+    class StudentsInfo(object):
+        def best_score(self):
+            best_score = 100
+            return best_score
 	
-	class StudentsInfo(object):
-		def best_score(self):
-			best_score = 100
-			return best_score
+    BUFFER_SIZE = 255
 	
-	BUFFER_SIZE = 255
+    # mypackage
 	
-	# mypackage
-	
-	# my_module
+    # my_module
 ```
 
 <h2 style="color:rgba(50,84,108,255)">White Space</h2>
@@ -45,51 +45,51 @@ Don't be afraid of names length and don't use abbreviations unless necessary.
 White spaces are just to improve your code readability, don't use them everywhere!
 
 ```python
-	# Acceptable using of whitespace:
-	var = 10
-	var = 2+8
-	formula = (x+y) * (x**5)
-	name = 'Sorena'
-	
-	score_list = [10, 20, 12]
-	slice_list = old_list[1:]
-	
-	new_set = (x, y)
-	
-	if x>5:
-		pass
-	if x>5 and z<20:
-		pass
-	
-	for i in range(0, 10):
-		pass
-	
-	while c==2 or c>25:
-		pass
-		
-	# Unacceptable using of whitespace:
-	var=10
-	var = 2 + 8
-	formula = (x + y) * (x ** 5)
-	
-	score_list = [10 , 20, 12]
-	score_list = [ 10,20,12 ]
-	slice_list = old_list[ 1: ]
-	slice_list = old_list[1 : ]
-	
-	new_set = (x,y)
-	new_set = ( x,y )
-	new_set = ( x , y )
-	if x > 5:
-		pass
-	if x>5and z<20:
-		pass
-	
-	for i in range(0,10):
-		pass
-	
-	while c == 2 or c > 25:
-		pass
+# Acceptable using of whitespace:
+    var = 10
+    var = 2+8
+    formula = (x+y) * (x**5)
+    name = 'Sorena'
+
+    score_list = [10, 20, 12]
+    slice_list = old_list[1:]
+
+    new_set = (x, y)
+
+    if x>5:
+        pass
+    if x>5 and z<20:
+        pass
+
+    for i in range(0, 10):
+        pass
+
+    while c==2 or c>25:
+        pass
+
+# Unacceptable using of whitespace:
+    var=10
+    var = 2 + 8
+    formula = (x + y) * (x ** 5)
+
+    score_list = [10 , 20, 12]
+    score_list = [ 10,20,12 ]
+    slice_list = old_list[ 1: ]
+    slice_list = old_list[1 : ]
+
+    new_set = (x,y)
+    new_set = ( x,y )
+    new_set = ( x , y )
+    if x > 5:
+        pass
+    if x>5and z<20:
+        pass
+
+    for i in range(0,10):
+        pass
+
+    while c == 2 or c > 25:
+        pass
 ```
 
 <h2 style="color:rgba(50,84,108,255)">New Line</h2>
@@ -102,49 +102,49 @@ White spaces are just to improve your code readability, don't use them everywher
 - In the body of methods and functions or in the main body one new line should be used to separate block of related codes   
 
 ```python
-	# Acceptable Newline:
-	import sys
-	import re
-	# newline between imports and other codes
-	class ClassOne(object):
-		def simple_function(self):
-			num_of_vars = 4
-			sum_of_vars = (a+b+c+d)
-			average = sum_of_vars/num_of_vars
-			# new line to separate related blocks of code
-			return average
-		# newline between functions or methods	
-		def print_some_text(self):
-			print('hello world!')
-	# newline between classes
-	# newline between classes
-	class ClassTwo(object):
-		def __init(self, name, enter_time):
-			self.name = name
-			self.enter_time = enter_time
-		# newline between functions or methods	
-		def just_pass(self):
-			pass
-		# newline between functions or methods
-		def say_greeting(self):
-			greeting = 'hi' + self.namename
-			greeting = greeting + 'How are you?'
-			# newline to separate related blocks of code
-			enter_time_message = 'youe enterd at' + str(self.enter_time)
-			enter_time_message - enter_time + 'So, you\'re on time'
-			# newline to separate related blocks of code
-			final_message = greeting + enter_time_message
-			return final_message
-	# newline between started functions or classes and main body
-	# newline between started functions or classes and main body
+# Acceptable Newline:
+    import sys
+    import re
+    # newline between imports and other codes
+    class ClassOne(object):
+        def simple_function(self):
+            num_of_vars = 4
+            sum_of_vars = (a+b+c+d)
+            average = sum_of_vars/num_of_vars
+            # new line to separate related blocks of code
+            return average
+        # newline between functions or methods	
+        def print_some_text(self):
+            print('hello world!')
+    # newline between classes
+    # newline between classes
+    class ClassTwo(object):
+        def __init(self, name, enter_time):
+            self.name = name
+            self.enter_time = enter_time
+        # newline between functions or methods	
+        def just_pass(self):
+            pass
+        # newline between functions or methods
+        def say_greeting(self):
+            greeting = 'hi' + self.namename
+            greeting = greeting + 'How are you?'
+            # newline to separate related blocks of code
+            enter_time_message = 'youe enterd at' + str(self.enter_time)
+            enter_time_message - enter_time + 'So, you\'re on time'
+            # newline to separate related blocks of code
+            final_message = greeting + enter_time_message
+            return final_message
+    # newline between started functions or classes and main body
+    # newline between started functions or classes and main body
     student = ClassOne()
-	studen.print_some_text()
-	print('class 1 is tested')
-	# newline to separate related blocks of code
-	person = ClassTow('Kassandra', 9)
-	print(person.say_greeting())
-	print('class 2 is tested')
-	# newline for end of the code		
+    studen.print_some_text()
+    print('class 1 is tested')
+    # newline to separate related blocks of code
+    person = ClassTow('Kassandra', 9)
+    print(person.say_greeting())
+    print('class 2 is tested')
+    # newline for end of the code		
 ```
 
 <h2 style="color:rgba(50,84,108,255)">Importing</h2>
@@ -155,13 +155,13 @@ White spaces are just to improve your code readability, don't use them everywher
 - If you want to assign a name to a module, you should use meaningful and understandable names related to the function of that module.
 
 ```python
-	# Acceptable importing:
+# Acceptable importing:
 	import sys
 	import re
 	from PyQt5 import QtCore, QtWidgets
 	import fibo as fibonacci
 	
-	# Unacceptable importing
+# Unacceptable importing
 	import sys, re
 	from PyQt5 import QtCore
 	from PyQt5 import QtEidgets
@@ -180,15 +180,15 @@ White spaces are just to improve your code readability, don't use them everywher
 - Increasing the line length should follow the following examples
 
 ```python
-	# Acceptable indentation:
+# Acceptable indentation:
 	if x>5:
 		print('x is grater than 5')
 	
-	# Unacceptable indentation
+# Unacceptable indentation
 	if x>5:
 		    print('x is grater than 5')
 	
-	# Acceptable line length: 
+# Acceptable line length: 
 	#vuse 4 space for indentation
 	total = (num_one
 			 + num_two
@@ -203,7 +203,7 @@ White spaces are just to improve your code readability, don't use them everywher
     	4, 4, 6
     	]
 	
-	# Unacceptable line length
+# Unacceptable line length
 	total = (num_one +
 			 num_two -
 			 num_three)
@@ -219,84 +219,84 @@ White spaces are just to improve your code readability, don't use them everywher
 - Docstrings are used to declare what does a python code or classes or methods or functions do
 - Every Python <u>3</u> code should start with utf-8 coding style and a docstring with following format:
 ```python
-    # -*- coding: utf-8 -*-
-    """
-	NAME: Code Name
-	
-	VERSION: xx.xx.xx
-	
-	PURPOSE: The Main Propose of This Code (say it in just one line)
-	
-	DESCRIPTION: A complete description  of what does this code do
-	
-	AUTHOR: Name of the author with <author@email.com>
-	
-	DATE: Date of start this code (dd-month name(in short)-yyyy)
-	
-	REQUIREMENT: Python version of this code
-				 lib1
-				 lib2
-	
-	LICENSE: What kind of license does this code use?
-	
-	desired URL(any URLs you want to be seen)
-    """
+# -*- coding: utf-8 -*-
+"""
+NAME: Code Name
+
+VERSION: xx.xx.xx
+
+PURPOSE: The Main Propose of This Code (say it in just one line)
+
+DESCRIPTION: A complete description  of what does this code do
+
+AUTHOR: Name of the author with <author@email.com>
+
+DATE: Date of start this code (dd-month name(in short)-yyyy)
+
+REQUIREMENT: Python version of this code
+             lib1
+             lib2
+
+LICENSE: What kind of license does this code use?
+
+desired URL(any URLs you want to be seen)
+"""
 ```
 - Every class should have a docstring with following format:
 ```python
-    """
-    What does this class for?
-    
-	...
-	
-	Attributes
-	----------
-	attr1: (type)
-		what is attr1 ?
-	attr2: (type)
-		what is attr2 ?	
-    .
-    .
-    .
-    Methods
-    -------
-    methode1
-    	short description
-    methode2
-        short description
-    .
-    .
-    .
-    """
+"""
+What does this class for?
+
+...
+
+Attributes
+----------
+attr1: (type)
+    what is attr1 ?
+attr2: (type)
+    what is attr2 ?	
+.
+.
+.
+Methods
+-------
+methode1
+    short description
+methode2
+    short description
+.
+.
+.
+"""
 ```
 - Every method(<u>init method of classes does not need docstring</u>), and function should have a docstring with following format:
 ```python
-    """What does this function or method do?
-		Parameters
-        ----------
-        arg1: (type)(necessary or optional)
-        	what is arg1?
-        arg2: (type)(necessary or optional)
-        	what is arg2?
-        .
-        .
-        .
-        Raises
-        ------
-        Raise(or Error) 1 Name:
-			In which situation raise 1 happens?
-		Raise(or Error) 2 Name:
-			In which situation raise 2 happens?
-		.
-		.
-		.
-        Returns
-        -------
-        (type) what dose this function return and how?
-    
-    # Use block of comments if you need to describe more 
-    # for example about the function algorithm
-    """
+"""What does this function or method do?
+    Parameters
+    ----------
+    arg1: (type)(necessary or optional)
+        what is arg1?
+    arg2: (type)(necessary or optional)
+        what is arg2?
+    .
+    .
+    .
+    Raises
+    ------
+    Raise(or Error) 1 Name:
+        In which situation raise 1 happens?
+    Raise(or Error) 2 Name:
+        In which situation raise 2 happens?
+    .
+    .
+    .
+    Returns
+    -------
+    (type) what dose this function return and how?
+
+# Use block of comments if you need to describe more 
+# for example about the function algorithm
+"""
 ```
 - Use "(double quote) for docstrings
 
@@ -315,7 +315,7 @@ White spaces are just to improve your code readability, don't use them everywher
 - you can reduce comments by smart naming the variables
 
 ```python
-	# Acceptable starting docstring:
+# Acceptable starting docstring:
     """
     NAME: Advance Price Scraper
     
@@ -340,7 +340,7 @@ White spaces are just to improve your code readability, don't use them everywher
 	https://ariopulse.com
 	https://github.com/S144S
     """
-    # Acceptable use of docstring:
+# Acceptable use of docstring:
 	class Animal:
     """
     A class used to represent an Animal
@@ -399,7 +399,7 @@ White spaces are just to improve your code readability, don't use them everywher
         print(self.says_str.format(name=self.name, sound=out_sound))
 
         
-    # Acceptable use of comments:
+# Acceptable use of comments:
     
     # Calculate the solution to a quadratic equation using the quadratic
     # formula.
@@ -415,7 +415,10 @@ White spaces are just to improve your code readability, don't use them everywher
 <h2 style="color:rgba(50,84,108,255)">Refrences </h2>
 
 [1]	[PEP 8](https://www.python.org/dev/peps/pep-0008/)
+
 [2]	[Barry's GNU Mailman style guide](http://barry.warsaw.us/software/STYLEGUIDE.txt)
+
 [3]	[Wikipedia](http://www.wikipedia.com)
+
 [4]	[Typeshed repo](https://github.com/python/typeshed)
 
