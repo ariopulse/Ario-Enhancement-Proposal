@@ -42,7 +42,9 @@ Don't be afraid of names length and don't use abbreviations unless necessary.
 
 <h2 style="color:rgba(50,84,108,255)">White Space</h2>
 
-White spaces are just to improve your code readability, don't use them everywhere!
+It's recommended to use white spaces around operands and operators
+Don't add any white space in blank new lines
+briefly, white spaces are just to improve your code readability, but don't exaggerate!
 
 ```python
 # Acceptable using of whitespace:
@@ -95,11 +97,14 @@ White spaces are just to improve your code readability, don't use them everywher
 <h2 style="color:rgba(50,84,108,255)">New Line</h2>
 
 - End of a Python code should have one new line
-- Between imports and codes should have one new line
+- Between imports and functions and classes should have two new lines
+- Between imports and raw codes should have one or two new lines
 - Between classes should have two new lines
-- Between each method or each function should have one new line
-- Between classes or functions and main body should have two new line
-- In the body of methods and functions or in the main body one new line should be used to separate block of related codes   
+- Between each method or each function in a class should have one new line
+- Between classes or functions and main body should have two new lines
+- Between each functions should have two new lines
+- In the body of methods and functions or in the main body one new line should be used to separate block of related codes
+- Between init docstring and should have one new line(if code starts with imports or raw codes) or two new lines(if code starts with functions or classes)   
 
 ```python
 # Acceptable Newline:
