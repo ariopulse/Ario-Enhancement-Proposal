@@ -46,6 +46,12 @@ It's recommended to use white spaces around operands and operators
 Don't add any white space in blank new lines
 briefly, white spaces are just to improve your code readability, but don't exaggerate!
 
+Use a single space after commas (e.g., `a, b, c`).
+
+Don't use spaces around the `=` operator when assigning default values to function arguments (e.g., `def foo(arg=42)`).
+
+Use a single space after `#` to start a comment on the same line.
+
 ```python
 # Acceptable using of whitespace:
     var = 10
