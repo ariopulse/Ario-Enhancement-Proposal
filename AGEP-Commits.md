@@ -27,6 +27,7 @@ Here is a list of Ario's standard and valid emojis with the case of using them:
 - 🧪 : Add, edit or modify tescases
 - 📦 : Update repo from other source
 - 🔙 : Backward to the older commits
+- 🧹 : Reformat and Linting
 - 🤝 : Merge a branche to main branch
 
 Remember to use these emojis for every commit, they are very very helpful.
