@@ -24,6 +24,7 @@ Here is a list of Ario's standard and valid emojis with the case of using them:
 - 🤖 : Add, edit or modify a model engine
 - 📮 : Add, edit or modify a database
 - 📚 : Add, edit or modify documents
+- 🧪 : Add, edit or modify tescases
 - 📦 : Update repo from other source
 - 🔙 : Backward to the older commits
 - 🤝 : Merge a branche to main branch
